@@ -14,4 +14,16 @@ function getJoao(){
     return joao;
 }
 
-export { deJoaoParaMaria, getMaria, getJoao }
+function deMariaParaJoao() {
+    joao += maria;
+    maria = 0;
+}
+
+function setMaria(valor) {
+    maria = valor;
+}
+function setJoao(valor) {
+    joao = valor;
+}
+
+export { deJoaoParaMaria, getMaria, getJoao, deMariaParaJoao,  setMaria, setJoao}
